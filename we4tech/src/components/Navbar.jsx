@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import Logo from '../assets/{17DDC792-7C45-4638-9868-E4E08668F87D}.png';
 import {
   FaHome,
   FaCogs,
@@ -66,13 +67,12 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-1 group">
-              <span className="text-2xl lg:text-3xl font-bold text-slate-900 transition-colors group-hover:text-slate-700">
-                We4
-              </span>
-              <span className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent">
-                Tech
-              </span>
+            <Link to="/" className="flex items-center group">
+              <img 
+                src={Logo} 
+                alt="We4Tech Logo" 
+                className="h-10 lg:h-12 w-auto object-contain transition-transform group-hover:scale-105"
+              />
             </Link>
 
             {/* Desktop Navigation */}
