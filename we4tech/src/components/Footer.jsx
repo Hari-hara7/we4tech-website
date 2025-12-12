@@ -37,7 +37,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <Link to="/" className="inline-block mb-6">
-              <img src={Logo} alt="We4Tech Logo" className="h-12 w-auto object-contain" />
+              <img src={Logo} alt="We4Tech Logo" className="h-16 w-auto object-contain" />
             </Link>
             <p className="text-slate-400 mb-6 leading-relaxed">
               We provide top-notch web development with PWA and SEO, graphic design, video editing services. Helping businesses grow with modern digital solutions.

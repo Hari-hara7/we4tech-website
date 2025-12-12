@@ -1,0 +1,287 @@
+/* Global Black Background */
+body {
+  background-color: #000000; /* Entire website background */
+  color: #fff; /* Default text color */
+}
+
+
+
+
+
+
+
+.about-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-title {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-description {
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.team-card {
+  background: #000000;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.team-photo {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.social-icon {
+  margin: 0 10px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.github-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.github-button:hover {
+  background-color: #0056b3;
+}
+
+.tech-stack-title {
+  font-size: 2em;
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.tech-stack-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tech-card {
+  background: #e9ecef;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.tech-card:hover {
+  transform: translateY(-5px);
+}
+
+.tech-icon {
+  font-size: 2em;
+}
+
+.tech-name {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+/* Team Card with Enhanced Yellow Animated Border */
+.team-card {
+  background: #121212; /* Dark background for contrast */
+  border: 1px solid #333; /* Initial border */
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden; /* Ensure the animation stays inside */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  color: #fff;
+}
+
+.team-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f7d200; /* Bright yellow */
+  transition: width 0.4s ease;
+}
+
+.team-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f7d200;
+  transition: width 0.4s ease;
+}
+
+.team-card:hover::before,
+.team-card:hover::after {
+  width: 100%; /* Line moves across the top and bottom on hover */
+}
+
+.team-card:hover {
+  transform: translateY(-10px); /* More prominent lift effect */
+  box-shadow: 0 8px 25px rgba(247, 210, 0, 0.4); /* Glowing shadow with yellow tint */
+  background: linear-gradient(145deg, #202020, #1a1a1a);
+}
+
+/* Subtle glowing border when hovered */
+.team-card:hover {
+  border: 1px solid #f7d200; /* Yellow border on hover */
+}
+
+/* Animated glow inside card */
+.team-card:hover::before, 
+.team-card:hover::after {
+  box-shadow: 0 0 10px #f7d200, 0 0 20px #f7d200;
+}
+
+/* Button with Enhanced Yellow Animated Border */
+.github-button {
+  display: inline-block;
+  background-color: #121212;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  transition: background-color 0.4s, box-shadow 0.4s;
+  border: 1px solid #333;
+}
+
+.github-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f7d200; /* Yellow */
+  transition: width 0.4s ease;
+}
+
+.github-button::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f7d200;
+  transition: width 0.4s ease;
+}
+
+.github-button:hover::before,
+.github-button:hover::after {
+  width: 100%; /* Line moves across the top and bottom on hover */
+}
+
+.github-button:hover {
+  background-color: #1a1a1a; /* Darken button on hover */
+  box-shadow: 0 8px 25px rgba(247, 210, 0, 0.4); /* Yellow glow */
+  border: 1px solid #f7d200;
+}
+
+/* Tech Card with Enhanced Yellow Border and Effects */
+.tech-card {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  color: #fff;
+}
+
+.tech-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f7d200; /* Bright yellow line */
+  transition: width 0.4s ease;
+}
+
+.tech-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f7d200;
+  transition: width 0.4s ease;
+}
+
+.tech-card:hover::before,
+.tech-card:hover::after {
+  width: 100%; /* Line moves across the top and bottom on hover */
+}
+
+.tech-card:hover {
+  transform: translateY(-10px); /* Lift effect */
+  box-shadow: 0 8px 25px rgba(247, 210, 0, 0.4); /* Yellow glowing shadow */
+  background: linear-gradient(145deg, #202020, #1a1a1a); /* Subtle background gradient */
+}
+
+.tech-card:hover::before,
+.tech-card:hover::after {
+  box-shadow: 0 0 10px #f7d200, 0 0 20px #f7d200; /* Glowing effect on borders */
+}
+
+
+

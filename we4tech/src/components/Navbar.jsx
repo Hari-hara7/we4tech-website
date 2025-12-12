@@ -71,7 +71,7 @@ const Navbar = () => {
               <img 
                 src={Logo} 
                 alt="We4Tech Logo" 
-                className="h-10 lg:h-12 w-auto object-contain transition-transform group-hover:scale-105"
+                className="h-14 lg:h-16 w-auto object-contain transition-transform group-hover:scale-105"
               />
             </Link>
 
